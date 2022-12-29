@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
 
     static authenticate = async ({ email, password }) => {
       try {
-        const user =  await this.findOne({ where: { email: email } });
+        const user =  await this.findOne({ where: { email: email, isVerified: true } });
 
         if (!user) {
           return Promise.reject(new Error("User not found"));
