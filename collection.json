@@ -1,0 +1,102 @@
+{
+  "item": [
+    {
+      "id": "afd69276-2874-411c-80d0-ce7a2db25fcb",
+      "name": "User Register",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8080",
+          "path": ["register"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Khana Zulfana Imam\",\"password\":\"281002\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "edac7770-c26d-4e9d-a2c0-7f72cf22593c",
+      "name": "User Login",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8080",
+          "path": ["login"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\":\"Khana Zulfana Imam\",\"password\":\"281002\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "2da5f1b3-5095-42cd-b70a-359ca32991f4",
+      "name": "User Biodata Create",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8080",
+          "path": ["biodata"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          { "key": "Content-Type", "value": "application/json" },
+          { "key": "Authorization", "value": "Bearer {{token}}" }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama\":\"Khana Zulfana Imam\",\"email\":\"Khana@gmail.com\",\"phone_number\":\"081234567890\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "75a8224c-0f7e-46f2-ab1f-039db0d2738c",
+      "name": "Update Biodata",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "8080",
+          "path": ["biodata"],
+          "host": ["localhost"],
+          "query": [],
+          "variable": []
+        },
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "method": "PUT",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama\":\"Khana Zulfana Imam\",\"email\":\"Khana@gmail.com\",\"phone_number\":\"081234567890\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "b197a945-4a93-432b-a914-065c72b846f8",
+    "name": "My Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
